@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(235, 215, 232);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+.container  {
+  scale: 0.80;
+  background-color: rgba(253, 239, 239, 0.6);
+  font-size: 20px;
+  border-style: dashed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+  padding: 100px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 8px rgba(116, 82, 93, 0.795);
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.image{
+  margin: 30px;
+  border: inset white;
+  border-radius: 50%;
+  padding: 30px;
+}
+
+.image:hover {
+  cursor: pointer;
+  scale: 1.1;
+  transition: 0.2s ease-in-out;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
+}
+
+.picked{
+  font-size: 15px;
+  margin: 30px;
+  border: inset white;
+  border-radius: 50%;
+  padding: 30px;
+  width: 50px;
+}
+
+.button-restart {
+  background-color: rgb(8, 0, 0);
+  color: blanchedalmond;
+  border: ridge;
+  padding: 15px;
+  width: fit-content;
+  border-radius: 10px;
+  font-size: larger;
+  box-shadow: 3px 0.5px 5px rgb(107, 27, 54);
+  margin-right: 500px;
+}
+
+.button-restart:hover {
+  background-color: rgb(168, 114, 127);
+  transition: 0.25s ease-in-out;
+  scale: 1.05;
+  cursor: pointer;
+}
+
+.button-home {
+  background-color: rgb(8, 0, 0);
+  color: blanchedalmond;
+  border: ridge;
+  padding: 15px;
+  width: fit-content;
+  border-radius: 10px;
+  font-size: larger;
+  box-shadow: 3px 0.5px 5px rgb(107, 27, 54);
+}
+
+.button-home:hover {
+  background-color: rgb(168, 114, 127);
+  transition: 0.25s ease-in-out;
+  scale: 1.05;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.outcome {
+  font-weight: bolder;
+  font-size: larger;
+}

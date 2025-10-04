@@ -4,32 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="./styles/lets-play.css">
 </head>
 <body>
-<h1>Rock Paper Scissors</h1>
-<h2>Let's Play!</h2>
+  <div class="container">
+  <h1>Rock Paper Scissors</h1>
+<h2>Let's Play! Pick a move.</h2>
  
+<div class="images">
   <img src="./rps-images-files/rock-emoji.png" style="width: 100px;" onclick="
     playGame('rock');
-    " class="js-rock">
+    " class="js-rock image">
 
   <img src="./rps-images-files/paper-emoji.png" style="width: 100px;" onclick="
     playGame('paper');
-    " class="js-paper">
+    " class="js-paper image">
 
   <img src="./rps-images-files/scissors-emoji.png" style="width: 100px;" onclick="
     playGame('scissors');
-    " class="js-scissors">
- 
-  <p class="js-picked"></p>
-  <p class="js-outcome"></p>
-  <p class="js-score"></p>
+    " class="js-scissors image">
+ </div>
 
-   <button onclick="
+ <div class="result">
+  <p class="js-picked"></p>
+  <p class="js-outcome outcome"></p>
+  <p class="js-score"></p>
+</div>
+
+<div class="buttons">
+   <button class="button-restart" onclick="
   restartGame();
   ">Restart</button> 
 
-  <a href="./index.html"><button>Home</button></a>
+  <a href="./index.html"><button class="button-home">Home</button></a>
+  </div>
+  </div>
+
+  
   <script src="./scripts/lets-play.js"></script>
 </body>
 </html>
